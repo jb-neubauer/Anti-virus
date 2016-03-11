@@ -5,7 +5,7 @@ import sys
 from datetime import datetime
 
 # Clears the screen
-#subprocess.call('clear', shell=True)
+# subprocess.call('clear', shell=True)
 
 # Asks for input or defaults to local host if none is given
 remoteServer = raw_input("Enter the host you would like to scan")
