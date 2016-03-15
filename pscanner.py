@@ -29,7 +29,7 @@ t1 = datetime.now()
 Using range to find the specific ports with Error handling
 '''
 
-safePorts = [22, 443, 53, 465,  
+safePorts = [22, 443, 53, 465]  
 
 try:
     for port in range(1, 1025) 
@@ -46,11 +46,11 @@ except Keyboardinterrupt:
     sys.exit()
 
 except socket.gaierror:
-    print 'Hostname could not be resolved. Exiting'
+    print("Hostname could not be resolved. Exiting")
     sys.exit()
 
 except socket.error:
-    print "Couldn't connect to server"
+    print("Couldn't connect to server")
     sys.exit()
 
 
