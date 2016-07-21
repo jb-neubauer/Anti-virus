@@ -1,0 +1,134 @@
+###Everything in this file is in reverse order  The bottom of the file is the first thing I performed, the top, the last###
+
+
+
+#For the last warning I was receiving:
+`AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message`
+
+%I had to add
+`ServerName localhost`
+to apache2.conf
+
+
+
+#I had run into an "issue" where I was receiving the message:
+`[Wed Jul 20 14:54:25.184418 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_LOCK_DIR} is not defined
+[Wed Jul 20 14:54:25.184668 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Wed Jul 20 14:54:25.184748 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Wed Jul 20 14:54:25.184812 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Wed Jul 20 14:54:25.184894 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Wed Jul 20 14:54:25.193733 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_RUN_DIR} is not defined
+[Wed Jul 20 14:54:25.194390 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Wed Jul 20 14:54:25.194687 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Wed Jul 20 14:54:25.194776 2016] [core:warn] [pid 7468] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 74 of /etc/apache2/apache2.conf:
+Invalid Mutex directory in argument file:${APACHE_LOCK_DIR}`
+
+This would happen when I ran commands like
+`apache2 -t`
+or service
+`apache2 restart`
+
+%After reading from multiple different sites I found that my issue was that the envvars file was not sourced and a simple
+`source /etc/apache2/envvars`
+did the trick
+
+%The information came from the site "http://www.howdididothat.info/2014/10/07/invalid-mutex-directory-in-argument-file/"
+
+
+
+#So OCSP stapling works, DO has a straight-forward guide for this
+the first thing to do is to get to the ssl directory, while there run the command:
+`wget -O - https://www.startssl.com/certs/ca.pem https://www.startssl.com/certs/sub.class1.server.ca.pem | tee -a ca-certs.pem> /dev/null`
+
+%After that go to the 000-default-le-ssl.conf file (in my case) and add the following Within the <VirtualHost> portion of the file:
+`SSLCACertificateFile /etc/ssl/ca-certs.pem`
+
+%This creates a link to the file stated
+also add:
+`SSLUseStapling on`
+
+%Which allows stapling
+Outside the <Virtualhost> add 
+`SSLStaplingCache shmcb:/tmp/stapling_cache(128000)`
+%Check for any errors
+`apachect1-t`
+then restart apache
+Check with SSLLabs
+
+
+
+#after each change in a configuration file I had to restart apache
+`service apache2 restart`
+Sudo was not required as I was performing the commands as "root"
+
+
+
+#To ensure that the site is only utilizing TLSv1.2, file options-ssl-apache.conf was edited from
+`SSLProtocol             all -SSLv2 -SSLv3`
+
+%to
+`SSLProtocol             all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1`
+
+%I could have also done
+`SSLProtocol             -all +TLSv1.2`
+
+
+
+#to remove some of the less modern cipher suites I had to edit the options-ssl-apache.conf file
+This file contained:
+`SSLCipherSuite      ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA`
+
+%and now contains:
+`SSLCipherSuite      EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH`
+
+
+
+#To preload the HSTS I had to add 
+`Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"`
+in the "LE" default conf file under /etc/apache2/sites-enabled
+
+
+
+#So here is what I have according to 
+https://www.ssllabs.com/ssltest/analyze.html?d=www.nebulousenhanced.com
+
+
+
+#This shows that there is a cert and that the site has an "A" Rating, my issue now is that I am not seeing the green https: in front of the fqdn
+I have run into a little bit of a situation where I cannot generate the self-signed certificate, my issue is:
+
+%  When I edit the 000-default.conf file, to reflect the addition of the SSL cert (Self Signed) then go to the website, nothing has changed.  This is what I added 
+`<VirtualHost *:443>
+    DocumentRoot /var/www/examplesite
+    ServerName example.com www.example.com
+    SSLEngine on
+    SSLCertificateFile /path/to/examplesite.crt
+    SSLCertificateKeyFile /path/to/privatekey.key
+    SSLCertificateChainFile /path/to/intermediate.crt
+</VirtualHost>`
+I have since removed this section from the 000-default-conf file while I continue to look into this issue
+This information I retrieved from "https://support.globalsign.com/customer/en/portal/articles/1225234-apache-http-server---ssl-certificate-installation" and while looking at the Ubuntu forums 
+
+% While looking at DigitalOcean, I came across this 
+https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04
+The issue I found with this is I do not see the
+/etc/apache2/sites-available/default-ssl.conf
+file nor does it say to create the file itself
+
+
+
+#To generate the keys needed for a CA 
+` openssl req -newkey rsa:4096 -nodes -keyout nebulousenhanced.key -out nebulousenhanced.csr`
+for the crt the command was:
+`openssl req -key nebulousenhanced.key -new -x509 -days 365 -out nebulousenhanced.crt`
+
+
+
+#to verify the 3 files (.crt, .csr, and the .key) were valid I ran:
+`openssl req -text -noout -verify -in nebulousenhanced.csr`
+`openssl rsa -in nebulousenhanced.key -check`
+ and
+`openssl x509 -in nebulousenhanced.crt -text -noout`
+I also verified by going to https://cryptoreport.websecurity.semantec.com/checker/views/csrCheck.jsp and placing the cat'd csr file in the input field and hitting check
+The last place I checked was https://www.sslshopper.com/csr-decoder.html
