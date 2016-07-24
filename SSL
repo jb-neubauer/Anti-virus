@@ -37,7 +37,7 @@ did the trick
 
 
 
-#So OCSP stapling works, DO has a straight-forward guide for this
+#So OCSP stapling works, Digital Ocean has a straight-forward guide for this
 the first thing to do is to get to the ssl directory, while there run the command:
 `wget -O - https://www.startssl.com/certs/ca.pem https://www.startssl.com/certs/sub.class1.server.ca.pem | tee -a ca-certs.pem> /dev/null`
 
