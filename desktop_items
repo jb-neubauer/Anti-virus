@@ -1,0 +1,19 @@
+Step 1: Copy the activecollab-timer/ directory into /opt
+This will end up being /opt/activecollab-timer/
+
+Step 2: Create /usr/share/applications/activecollab-timer.desktop and append the following content
+[Desktop Entry]
+Name=ActiveCollab-Timer
+Exec=activecollab-timer
+Terminal=false
+Type=Application
+Icon=/opt/activecollab-timer/timer-128.png
+Categories=TextEditor;IDE;Development
+X-Ayatana-Desktop-Shortcuts=NewWindow
+ 
+[NewWindow Shortcut Group]
+Name=New Window
+
+Step 3: In your ~/.bash_profile, append /opt/activecollab-timer to your $PATH
+
+Step 4: Re-log into your system
