@@ -1,0 +1,7 @@
+	Have you seen an unsecure website, ever want to make it secure.  Want to harden the site against
+attacks?  Show your knowledge in hardening, how would you harden the site, server, network.  For example
+If I wanted to harden my webpage against all 128 encryption I would have to make sure that I only allow
+AES256+EECDH:AES256+EDH under the SSLCipherSuite tag in a conf file.  
+	I would go about explaning both the benefit and disadvantage of using only 256 bit encryption
+and explane the process to get to that point.  
+

@@ -1,0 +1,16 @@
+One File Only : Compress
+gzip -c filename > filename.gz
+
+One File Only : Decompress
+gzip -d filename.gz
+gunzip -d filename.gz
+
+Multiple Files : Compress
+tar -zcvf outputted_filename.tgz inputted_filename
+* -z = gzip, -c = create, -v = verbose, -f = outputted_filename.tgz (or .tar.gz)
+* This will tar (take multiple objects) and compress them into one file
+* outputted_filename can be .tgz or .tar.gz
+
+Multiple Files: Decompress
+tar -zxvf inputted_filename.tgz
+* -z = gzip, -x = extract, -v = verbose, -f = inputted_filename.tgz (or .tar.gz)
