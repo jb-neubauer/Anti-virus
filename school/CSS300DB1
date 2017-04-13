@@ -1,0 +1,11 @@
+
+you have been tasked to analyze and assess the security posture of your organization’s network resources and servers. Throughout this course, the assignments will have you review and analyze 
+the policies and processes procedures that are implemented to ensure the security of one of an organization’s most important assets: network resources. You will learn how to systematically 
+approach a vulnerability assessment and along the way anticipate the methods that hackers take to break into a system with the goal of finding the same vulnerabilities they would and 
+correcting them to reduce the likelihood of an exploit.
+
+To begin, you are tasked to describe what mechanisms and tools can be implemented to detect and prevent an intrusion into the network. Describe what an Intrusion Detection System and an 
+Intrusion Prevention system are, how they are similar and how they are different. In addition, what other mechanisms can be used in a network and server environment to detect when an 
+intrusion has taken place.
+
+

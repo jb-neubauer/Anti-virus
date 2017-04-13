@@ -1,0 +1,15 @@
+
+Scanning is the process of scannign to see what ports are open.  The ports that are scanned are both TCP and UDP ports.  Scanning allows for hackers to start the 
+enumeration process.  Enumeration takes scanning a step further. This is where you discover what processes are running on a system.  This also discovers versions,
+details about accounts and possible entry points.  
+
+The pro's of port scanning are that it shows what ports are open.  This will show possible points of attacks from hackers.  Another pro is that the most popular 
+tool, nmap, is free and readily available to anyone.  The last pro is also a con as well, knowing that it is available to all means that hackers can utilize the 
+tool as well.  Port scanning is a tool that provides a lot of information, and in the worng hands that individual can do a lot of harm to a system.  
+
+Enumeration can be the first step in contact becausee this can describe points of entry for an attack.  If a hacker has this ytpe of infomration and a system is 
+not patched, then there are ways already available where they are able to access a system because there are back doors.  
+
+
+Penetration testing reconnaissance -- Footprinting, scanning and enumerating  http://searchitchannel.techtarget.com/tip/Penetration-testing-reconnaissance-Footprinting-scanning-and-enumerating
+

@@ -1,0 +1,54 @@
+Address the following in 3–4 pages:
+Define and explain in detail the following cloud services:
+IaaS
+PaaS
+SaaS
+What do the above services (IaaS, PaaS, SaaS) provide?
+How can these challenges be overcome by an organization? Provide 2 examples.
+Be sure to reference all sources using APA style.
+
+	Cloud computing has become a staple for many organizations.  Cloud computing provides options to businesses that might not have been available before hand.
+Organizations have the opportunity of expanding their businesses without spending a lot of capital on networking infrastructure.  This leave a lot more time available
+for top priority projects or tasks.  
+	The place I work (SKS) though small, utilizes cloud computing.  They do this even more so now that they are planning on changing buildings next year.  I briefly
+spoke about costs.  This is a major benefit to SKS.  They plan on having physical infrastructure at the new building, but they will not need to purchase as much 
+if they plan on keeping both cloud based and a physical inrastructure.  Yes there is a reoccuring cosst to the cloud infrastructure, but that cost outweighs the cost
+of additional hardware and space for that hardware.  Also when needing more cloud computing space or power it is readily available, at a relatively low initial cost.  
+Where upgrading a physical structure can be costly.  
+	Another reason they utilize cloud computing is for for the uptime.  Many cloud providers 4 9's availability or 5 9's.  This is extremely beneficial when needing
+backups of systems.  This also means that the ability to work from anywhere would be available if the primary server were cloud hosted.  For SKS, having backups readily
+available is essential.  With the "always" available backups needed, SKS saves both money and space in not having a physical structure.  The availablity means that SKS
+can transfer the resources it would have needed for the physical infrastructure and devote those to other areas.  
+	The last major benefit is scalability.  With the company currently growing, so must the infrastructure.  With that said scalability is a big benefit to the 
+company.  We can scale up or rein in the size of the cloud structure you are using at will with relatively no downtime.   That means that if SKS goes through a real
+good time where we need to expand then we can easily expand our servers without having to spend more money upfront.  That also means that if we wanted to add additional
+buildings, SKS could easily do this without having to create all new networking infrastructure.
+	So what could go wrong with cloud computing.  It seems pretty good just given the three examples.  A major issue is that, while everything is cloud based, you
+are at the mercy of the ISP, and if they are having connection issues then your service might go down.  I find it funny, because this recently happened.  Being on the 
+East Coast, many people were experiencing connection issues with their ISP including SKS.  The issue was that the service that the ISP was relying on had gone down and
+caused major outages across the East Coast.  So we lost our service to our customers for several hours while the ISP was troubleshooting their issue.  To counter this
+the best thing to do is keep the main servers locally, while having redundant servers on the cloud.  This ensures that if an ISP is affected by an outage that the 
+organization will still be able to function without internet connectivity.
+	A second major issue is security.  Are we really sure that the data we are storing on the cloud is safe.  The cloud service will have access to all of the data
+that is stored within their infrastructure.  If a hacker is sharing the same server as you are, they might be able to fin a backdoor to your information easier than if
+the data wasn't on the cloud.  Not only that, how trustworthy is the cloud provide the best security possible.  They may have adequate security when you first sign up 
+with that provider, but what is ensuring that they are continually providing and implementing the latest security updates.  If this is an issue, the best thing to do is
+to open support tickets with the cloud provider.  Constant communication is key here.  Being transparent with the cloud service provider is imperative.  Additionally, 
+you could and should keep current on the latest malicious attacks that are out there.  This will give you a heads up and give time to research what can be done in the
+event something actually happens to the server or service.
+	There are three types of cloud services IaaS, PaaS, and SaaS (Infrastructure as a service, Platform as a service, and Software as a service).  Each one provides
+something a little different for the customer.  
+	SaaS provides software to its customer over the web.  They provide access to commercial software packages that is located in a central location.  The major 
+benefit to this is that this software can be deployed to many users at once and they do not have to worry about things like patches or upgrades.
+	PaaS is provides the same services as SaaS.  the only difference is that this is more geared toward software creation and not software delivery.
+	IaaS provides all of the infrastructure needed to get servers up and running, just in cloud form.  Meaning the server, storage, networking, and OS are all 
+provided virtually.  This means that instead of purchasing all things mentioned they are "provided" for you as a service.
+
+
+
+
+
+Reference 
+Why Move To The Cloud? 10 Benefits Of Cloud Computing https://www.salesforce.com/uk/blog/2015/11/why-move-to-the-cloud-10-benefits-of-cloud-computing.html
+11 Advantages of Cloud Computing and How Your Business Can Benefit From Them https://www.skyhighnetworks.com/cloud-security-blog/11-advantages-of-cloud-computing-and-how-your-business-can-benefit-from-them/
+

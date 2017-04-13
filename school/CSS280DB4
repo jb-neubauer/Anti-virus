@@ -1,0 +1,17 @@
+Discuss the importance of having a signed agreement, and give the implications of conducting a pen test without one.
+Many organizations employ intrusion detection systems (IDS) or even intrusion prevention systems (IPS). It is important to understand how these tools protect the organization.
+Describe how footprinting the stages of an attack might not be detected by an IDS.
+Recommend an IDS for your organization and include the pros and cons behind your recommendation.
+
+The Importance of a signed agreement when performing a pen test is imperative to the person performing the test as well as the company itself.  Not only does this protect the person 
+performing the pen test, but it is important for the organization itself.  A signed agreement ensures that the pen test is a legal test that the organization is not only aware of 
+but allows.  The pen test is agreement is a guideline for the pen tester.  This document covers the areas that are going to be tested and by having both parties sign, there is no 
+confusion of what is going to take place.  
+Footprinting is the process of gathering infomration.  There are types that are not intrusive to a system, like going to the main website (if there is one).  As long as the 
+system is not "attacked" an IDS will not help.  There is a lot of information that can be found by going to a website, or googling about the company.  These can lead to gaining 
+CEO information, location information, contact information as well as other information.  Just by visiting a website, you can see if they are using encryption on the website 
+and whether or not they have certificates for their website.  All of these things can be done without gaining access to a system or attacking.  This is all information that can
+be readily available.  Also using a site like SSL labs to scan a website will provide a lot of information and an attack can be tailored to the information gathered.
+I feel like the best type of IDS would be any solution that works on NIDS and HIDS.  As for as singling one out I wold have to choose a solution like SNORT.  The reason for this is
+because it is a free solution.  The major flaw is the lack of GUI if one is required.  SNORT uses both signature and anomaly based methods.  This I feel would be the best solution
+solely based on cost and that it is both signature and anomaly based.   

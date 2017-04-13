@@ -1,0 +1,1 @@
+move in your current direction until you reach an enemy or can not move firther in that direction.  If you reach an enemy, they perform their action first

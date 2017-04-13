@@ -1,0 +1,5 @@
+The management team is concerned about having the data for the music application in a single spot, and how having this setup could make this server more of a target or put it at higher risk than others. They would like to better understand what are the actual risks with having a database running inside the information systems infrastructure. Prepare a report for the management team that describes the following:
+
+The security concerns or vulnerabilities associated with the DBMS.
+The security concerns or vulnerabilities associated with the database.
+What safeguards could be implemented to reduce the risk for each.

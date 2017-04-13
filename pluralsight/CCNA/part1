@@ -1,0 +1,91 @@
+
+~netstat~
+
+ display protocol stats and current TCP/IP network connections
+
+-a 
+displays active connections
+
+-n 
+display addresses and ports in numerical form
+
+-p
+allow us to sort out TCP and UDP traffic
+
+netstat -an
+displays all active connections in numerical form
+
+only three states 
+Listening, time_wait, Established
+
+netstat -an | find established
+This displays all active connections in numerical form that are established
+
+nslookup <IP address>
+looks up the domain for the IP address you are looking for
+
+netstat -anp 
+ex. netstat -anp UDP
+displays ports in numerical port, does not show state if connection is UDP
+
+components of an IP address
+Network portion and host portion
+
+IP address is made for humans to view, but it is actually in binary when it relates to networking
+
+to identify: 
+classful addressing not used 
+classful addressing ~ A, B, C, D, E 
+A ~ 0.0.0.0 - 127.255.255.255  Used for very large Corporations
+8 bits in network portion  24 in host
+B ~ 128.0.0.0 - 191.255.255.255  
+16 bits in network portion 16 in host  used for a larger number of medium sized corp
+allows for approx. 65k hosts
+C ~ 192.0.0.0 - 223.255.255.255
+24 bits in the network portion 8 in the host designed for small businesses
+only allowed 255 hosts
+D ~ 224.0.0.0 - 239.255.255.255
+32 bits of network portion. no host portion.  reserved for multicast 
+streaming video only for internal companies
+E ~ 240.0.0.0 - 255.255.255.255
+
+
+classless addressing 
+uses subnet mask
+in host portion place 1, in host portion place 0 to receive :
+ex. 10.0.0.10
+subnet mask is 255.0.0.0
+it defines the difference between the network and host portion
+
+this can fall anywhere in the 4 octets 
+ie.:
+10.0.0.0 with the host and network protion split in the second octet creating 
+11111111 11111111 11110000 00000000 or 255.255.240.0
+
+network address ~ all 0's in the host portion
+
+broadcast address ~ broadcast to all devices on that network.  all bunary 1's in host portion
+
+host address ~ all numbers in the host between all 0's and all 1's we assign to all network devices in the environment
+
+private and public addresses
+most people use a one public addressing scheme for external and for internal use a private network addressing scheme
+
+Network address translation
+private address ranges ~ 10.0.0.0 - 10.255.255.255, 172.16.0 0 - 172.32.255.255, 192.168.0.0 - 192.168.255.255
+
+NAT takes private and converts it to public
+
+another IP address to know is 127.0.0.1 or the home address (local device) loopback
+address
+
+when looking at IP addresses, if more then one default gateway is set, than that 
+can cause some major issues.  The IP address card with the default gateway is the 
+address currently in use.
+
+ipconfig /all ~ provides more information than regular ipconfig,
+This shows a discription, and MAC address, shows whether DHCP is enabled Also shows
+DNS servers
+
+
+

@@ -1,0 +1,10 @@
+ln -sf /usr/share/zoneinfo/America/Neww_York /etc/localtime   (Changes the time of the server)
+
+
+Things I need to learn:
+Security +
+nmap
+wireshark
+CCNA/CCNA Sec, CCNP/CCNP Sec
+Python
+SQL

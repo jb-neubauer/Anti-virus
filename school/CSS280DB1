@@ -1,0 +1,33 @@
+Describe the difference between a black hat hacker and a white hat hacker.
+Where does the process of ethical hacking fall within the spectrum of hackers?
+Give 2 activities that would be considered white hat activities and 2 activities that would be considered black hat activities.
+Support your choices.
+Do you think that any of these activities could change in the future from white hat to black hat or vice versa?
+
+
+    Hacking has become a major issue in the today's world.  With there being so many resources both devoted to both sides 
+it is often hard to distinguish which side has the upper hand.  
+    White hat hackers are those devoted breaking into a corporate system with the intention of exposing flaws and weaknesses 
+so that a company can devote resources to fixing those flaws.  White hat's utilize their hacking skills to report all of the flaws 
+in a systems security to prevent black hat's from gaining access.  They utilize pen (penetration) tests to find these flaws.  Pen tests
+are a tool used by white hats to test the secutiry posture of an organization.  The second activity they utilize would be the 
+reporting that they provide an organization.  The report they provide is very detailed.  It goes over the pen test itself, what 
+methods were used to perform the pen test, the results of the pen test, this include any informatiaon gained, and reccommendations 
+to the company to enhance their security posture.  
+    The process of ethical hacking falls under the scope of the White Hat hackers.  Ethical hacking is not done for monitary gains, but 
+the utilization of skills to assist organizations in preventing black hat hackers from retreiving sensitive information.  This process, 
+however often involves illegal means and requires a contract between the pen tester and the company before any action can take place.
+    Black hat hackers are the exact opposite of white hat hackers.  They are concerned with performing malicious acts for personal gains.  This 
+could be stealing personal information, credit card information or preventing a user or company from using their resources.  They utilize things
+like Ransomware which takes over a computer and the user/company needs to pay to remove the lock (encryption) to utilize the information of the 
+computer again.  They also use things like malware to gain access to personal information like credit card info and account logins.  
+    As far as whether these activites can change from white hat to black hat.  I believe they already have.  There is a group called the Grey hat
+Their intentions are neither good or malicious for the most part.  They are hackers that may discover security flaws in companies without their 
+permission and disclose their findings to the company so they had time to fix the flaw.  They don't follow all of the activities of the black hat
+or the white hat hackers, they often do illegal activities without a company knowing, but may have good intentions.
+
+    Resources
+Hacker Hat Colors Explained: Black Hats, White Hats, and Gray Hats  http://www.howtogeek.com/157460/hacker-hat-colors-explained-black-hats-white-hats-and-gray-hats/
+
+How Black Hats and White Hats Collaborate to Be Successful  https://securityintelligence.com/how-black-hats-and-white-hats-collaborate-to-be-successful/
+

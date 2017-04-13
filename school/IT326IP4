@@ -1,0 +1,29 @@
+	Maintenance is always a big issue when it comes to servers.  As with most things
+the easiest way to do things would be to Automate all maintenance features possible.  Things 
+like automating software updates are crutial to being a good admin.  With all of the other 
+tasks that you could be performing, automating a majority of them will allow freedom to 
+focus on other tasts.  
+	A perfect example of a system that needs to be automated would be "Windows updates."
+The reason by Automating this is could you imagine having to update 100+ user computers and 
+servers, there wouldn't be time for anything else.  Creating a GPO that allows Windows to 
+update during off peak house means that work won't be interupted. In the situation I have 
+created, I would set up a GPO that would install updates the following Monday at 0100.  The
+reason for this is there isn't anyone at the building to interrupt, and this gives other
+companies a week of testing before the updates are applied to my users workstations.  This is 
+a week of possible debugging and hot fixes that Microsoft would apply.  
+	As far as other maintenance items.  If the software that users are using in house was 
+created in house then there would be testing of the new software packages that before going live.
+All code would be tested on a development server then transferred to a section of the dev server 
+to test with all other code that was to be implemented.  Once all facets of the code are tested, then
+all of the code would be made live once or twice a month.  This would be done at the end of the second
+and 4th weeks of the month.  This ensures that there aren't too many items in the custom software
+changing all at once and that all of the code has been tested against the system and the additional
+software layers trying to be implemented.  This can also be automated.  A couple of crons could be 
+created to allow the production server to accept user code then reapply the limitations on this.  
+	Backups to systems would occurr during the overnight right before midnight.  These will be 
+Differential backups to ensure that the the critical systems are backed up.  On top of that, 
+there would be nightly servers to the cloud.  The reason for this would be to allow for catastrophic 
+failure at the primary site and allow for minimal downtime.  
+	What would be monitored?  Traffic going in and out of the servers. This is to ensure that 
+there isn't any unauthorized access to the servers.  I would monitor the traffic through the VPN
+servers as well.  Again to ensure on authorized personnel can access the information.  

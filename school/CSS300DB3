@@ -1,0 +1,18 @@
+The team is concerned about understanding the difference between an authenticated and unauthenticated attack. They have asked you to describe what each one of them is and to provide examples of each. Prepare a report for your peers that describes the following:
+
+The definition and at least 2 examples if an unauthenticated attack.
+The definition and at least 2 examples if an authenticated attack.
+
+
+An unauthorized attack is an attack that does not use usernames or passwords when testing and or scanning a network.  An authorized attack is one that is able to simulate a user by using credentials to simulate users on a website.
+
+An authorized attack is one that can not do as much harm as an Authorized attack.  The authorized attack has more power and requires more time and effort to complete, where an unauthorized attack is easy and requires little in 
+the way of tools.  
+
+
+
+Ref:
+Unauthenticated vs. authenticated security testing http://searchenterprisedesktop.techtarget.com/tip/Unauthenticated-vs-authenticated-security-testing
+
+uthenticated vs Authenticated Vulnerability Scans and Testing https://www.claykeller.com/2011/03/authornot/
+

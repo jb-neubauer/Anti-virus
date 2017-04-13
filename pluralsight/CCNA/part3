@@ -1,0 +1,49 @@
+? brings up a list of all commands available at that privilege level
+just hit the ? mark
+
+you can append letters before the ? mark to narrow down the command
+
+tab complete also works in cisco routers
+
+ie. 'configure t' <TAB> will auto complete the <terminal> 
+or 'configure t' <ENTER> will also bring you to the config terminal
+
+also can type commands like 'int f0/1' to get to the interface of fastehernet port
+0/1
+
+if there is a command that the router does not understand then it will reach out to
+'domain server 255.255.255.255 and look that up, it will do this three times
+to prevent this, in the config terminal type the command 'no ip domain-lookup'
+
+to get rid of the log messages from interupting typing of commands go to the 
+config terminal by typing 'configure terminal' then 'line console 0' <the port you are
+connected to> then tpe 'logging synchronous'  to stop the log from showing up
+
+running the 'do' command in the config terminal will run the command after the do 
+in privilege mode 
+
+to set up a domain name for the router <SSH> you need to be in config mode by running
+command 'enable' to get ot privilege mode then 'configure terminal' to get to the 
+configuration terminal.  Once there run the command 'ip domain-name <name of domain>'
+
+Create a user, by being in config terminal mode by typing 'enable' to get to privilege
+mode then 'configure terminal' to get to the config terminal. once in configuration
+mode type 'username <username> password <password>' ie.
+'username Justin password CCNA'
+
+to create the key you need to be in configuration mode by typing commands 'enable' to 
+get to privilege mode, then 'configure terminal' to get to configuration mode
+once there type command 'crypto key generate rsa general-keys modulus <number of bits
+between 360 and 2048>'   Once the key is generated, SSH is enabled.  To enable ssh v2
+type in 'ssh version 2'  This enables ssh version 2 instead of version 1.99
+
+Final step is to dis-allow virtual lines to accept telnet 
+to do this you need to be in lines VTY then then number of lines that you want to 
+configure.  to get there type 'enable' to get to privilege mode, then 
+'configure terminal' to get to the configuration mode, then 'line vty <number of lines>'  then 'transport input SSH' to remove access via telnet.  finally, copy the 
+running config to the startup config, by exiting to privilege mode 'exit' down to 
+privilege mode then 'copy running-config startup-config'
+there is one last thing needed is 'login local' to use the password database 
+this has to be done in line vty
+
+

@@ -1,0 +1,62 @@
+Explain in detail the development of BIA for an organization considering cloud computing services.
+Describe and discuss the methods and techniques to secure data at rest (DAR) and data in motion (DIM).
+What challenges exist, and how can they be overcome? Explain.
+
+Developing a BIA can be very beneficial to any organizaion, especially those
+considering the useer of clould computing services.  This is a key requirement 
+for an effective DR (Disaster recovery).  In order for this to work well though,
+there are many things that need to be addressed and happen so the BIA and DR are 
+effective.  Some of the steps include collecting data, document, meet with 
+management to review the data.
+The first thing to do however is to get the support from senior management.  
+With their support, you can easily gain the support needed to have a proper BIA.
+That support will be valuable when trying to get members of management to 
+participate in the BIA as well as the DR.  
+After, hold a preliminary meeting with those members to go over the BIA and 
+discuss the core processes.  At this meeting distribute a questionnaire and 
+follow up with thosse managers to review the questionnaire.  Once all of the 
+questionnaires are complete, meet with each individual and review and refine 
+their document.  
+Then schedule a meeting with all involved individuals and look for gaps in the 
+data and priortize the processes based on the impact of the business.  All 
+processes should be documented, this includes those processes that affect the 
+business indirectly.  I know at the place I work, we use a numbering system to 
+show the impact of these processes.  They are numbered from 1(low) to 5(high).
+During this meeting, an RTO will be needed for each process.  The RTO will 
+define all apects of the DR for an objective.  The RTO will define groups that 
+will deal with each aspect of the RTO.  
+The last thing would be to convene and present the processes of the BIA and the
+impact each process has on the company.  Also there will need to be follow up 
+meetings that will refine each process.  
+The best ways to secure DAR is to limit those that can access the data.  Putting
+proper policies in place to ensure only those that require the information has
+access to that information.  For example if you have a shared accounting folder
+you only want accounting to have access to that folder and not another department
+like maintenance.  Things like having your systems up to date and with proper 
+IDS and IPS can help immensly.  These will alert system admins or whoever is in
+charge of the network that someone is trying to gain unauthorized access.  For
+users, implement training on common threats and threat prevention like phishing.
+Implement two-factor authentication to further help prevent hachers from gaining
+control of user accounts.  For DIM a lot of the security features you want to 
+implement are the same as DIR.  The major difference is to use encryption when 
+accessing the data or moving the data, and don't post passwords or encryption
+private keys in the clear.  Then there wouldn't be a point to encryption.
+The challenges that one could face when dealing with any of this would be push
+back from management.  The reason for this is that they may not fully uderstand 
+the need for proper encryption or training behind some of the policies regarding 
+cloud computing.  Also users are a major challenge.  They have to understand 
+the data they are accessing can be sensitive and should be handled with care. 
+That means using strong passwords, proper encryption if they need it, and to hide
+passwords.
+To overcome any of these I feel the solution is simple.  Train the employees, 
+put the responsibility on them when accessing information.  The last thing would
+be to put proper security features in place. Make sure there are proper SLA's 
+in place and keep access to the data at a minimul.
+
+
+
+
+
+Resources:
+
+Conducting an effective business impact analysis http://searchsecurity.techtarget.com/feature/Conducting-an-effective-business-impact-analysis

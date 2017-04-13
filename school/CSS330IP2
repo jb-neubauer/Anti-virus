@@ -1,0 +1,93 @@
+Create the following views:
+A view called, Corporate_Directory, that shows Each Employee (First Name Concatenated to Last Name , Email, Phone) their Department Name, their Location City, Country Name and Region Name
+A view called, Manager_Information that shows all Employees (First Name Concatenated to Last Name, Email, Phone, Salary, Commission Percentage) their Manager’s Name Name, their Job Title and the Jobs Salary Range
+Create the Following Users:
+Employee_User
+Manager_Support
+Manager_Manager
+HR_User
+HR_Support
+HR_Manager
+Note: that there may be additional users needing similar or the same access as these 6 users in the future
+Create the Following Roles:
+Employee_Select
+Manager_Select
+Manager_DML
+HR_Select
+HR_DML
+Implement the Following Access Control List using SQL:
+User/Role
+
+Table/View
+
+Privilege
+
+Employee_User
+
+Corporate_Directory
+
+SELECT
+
+Manager_Support
+
+Employees, Job_History, Jobs
+
+SELECT
+
+Manager_Support
+
+All Views
+
+SELECT
+
+Manager_Manager
+
+All Views
+
+SELECT
+
+Manager_Manager
+
+Employees, Job_History, Jobs
+
+SELECT/INSERT/UPDATE/DELETE
+
+HR_User
+
+All Views
+
+SELECT
+
+HR_Support
+
+All Tables
+
+SELECT
+
+HR_Support
+
+All Views
+
+SELECT
+
+HR_Manager
+
+All Views
+
+SELECT
+
+HR_Manager
+
+All Tables
+
+SELECT/INSERT/UPDATE/DELETE
+
+All
+
+Exceptions (Everything not Specifically Mentioned)
+
+None/Deny
+
+Note: the use of ‘All’ this means/implies that as the application expends or contracts the users should be able to view all new objects as well.
+Does it make sense to grant specific objects to user or use the roles?? Describe Your approach for the implementation about the setup, why, how and if you decided to utilize the roles
+Submit All SQL

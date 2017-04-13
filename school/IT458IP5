@@ -1,0 +1,55 @@
+
+Maintenance
+Compose a section on what must be done to maintain this DR/BC Plan in a satisfactory state of readiness.
+Describe how a DR/BC audit might be conducted, by whom, for what purpose, and how frequently.
+Final Document Review
+Review the entire document for any changes and improvements that you would like to make.
+Ensure that this final version of the plan is sufficiently detailed to allow the organization to confidently move forward with the use of the document for the next steps in development of the DR/BC Plan based on your report.
+Any previous instructor feedback should be addressed with appropriate changes.
+
+	So there was a failure in the DR what could go wrong?  How could we have prevented a 
+failure in the DR?  What can we do differntly to avoid this situation from occurring?  All 
+valid questions.  Most of the time what I find is that there is either a breakdown in 
+communication, testing, execution, or preparation.  
+	To avoid a failure situation such as this, certain steps should have been in place
+to mitigate failures from occurring.  Testing is a great way to simulate a live event.  This
+ensures that those procedures in place for the DR are working the way they should.  On top of
+that it ensures that all of the systems will be brought back online in the proper order.  Without
+testing situations like the one above can occur.  It also prepares all individuals involved for
+a situation when an occurrance happens.  I believe that in this scenario, testing was not 
+performed.  There was a clear breakdown in the scenerio that proves that testing did not occur.
+Testing the systems for failure before a failure occurs help point out weak areas in the DR, 
+and as long as those are dealt with properly, there shouldn't be any issues.  
+	Also Testing ensures that backup systems are ready to go and all of the information 
+has been backuped.  In the scenario, there might have been a little complacent, and the
+assumption might have been that because there are backups that those backups are functioning
+properly.  
+	The DR should be a reflection of the best practices when dealing with a disaster.
+In this case, it would appear that best practices were over looked and because of that, 
+systems went down.  The DR should provide the guidelines to get the systems back online 
+efficently without compromising those systems.  
+	The steps to take during the event would be to contact outside customers and vendors
+to get them on standby in the event of something catastrophic.  The vendors need to be contacted
+to assist if necessary those systems that are not coming back on properly.  In the event of 
+a DR event the steps to take would be to assess the situation, consult the DR policy for guidelines
+during the event.  Then it would be to consult the proper policies regarding the affected departments.
+Once the event has been confirmed to have been completed.  A secondary assessment should be completed
+to confirm the systems that were affected.  Then the systems should start to be brought back up
+starting with the most crucial to the systems that have no bearing on production.  
+	Once the systems are restored the things to do would be to document your findings.  This is very
+important.  This will tell an organization how effective the DR was.  This is also where findings are 
+presented.  This will give a documented account of the cause of the event and the steps taken to get 
+everything back up and running.  After the event, those that are on involved in the DR should have
+a meeting to go over the steps to mitigate the effects of this event from happening again. 
+
+	For the disaster recovery audit, I would most likely have 2 auditors audit the DR.  The first 
+would be an internal auditor who is familiar with the systems that are in place.  The second person would
+be a professional external auditor.  This will give an objective pair of eyes to look over things in the DR
+plan.  The two together would provide an adequite amount of guidence into the DR and could effectively make
+reccommendations.  As far as frequency goes, the reccommendation is generally once a year.  For me, because
+I am dealing with critical systems, I feel that once a year is not frequent enough.  Every 6 months would 
+be ideal when it came to auditing a DR.  I would also make sure the DR is audited after a disaster occurred.
+  	
+
+
+10 Reasons Why Disaster Recovery Plans Fail http://www.datamation.com/security/10-reasons-why-disaster-recovery-plans-fail.html

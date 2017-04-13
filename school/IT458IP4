@@ -1,0 +1,54 @@
+Policies
+Research, identify, and document the various policies and procedures that need to be considered for inclusion in a DR/BC Plan.
+Who will be responsible for writing these procedures and policies?
+What approvals are required for such procedures and policies?
+Training
+What training is required? Consider the following groupings at a minimum:
+Executive
+DR/BC team
+Middle managers
+Department heads
+Employees
+Suppliers
+Other
+Emergency response team
+Research and define the emergency response team as it pertains to your company.
+Who should be included?
+What roles do they play?
+What are their responsibilities?
+What triggers the ERT going into action?
+
+	The methods of dealing with identified risk are to accept, transfer, avoid, or mitigate the risk.  If the organization accepts the risk, they have weighed the costs of the risk and are willing to take responsibility for the risk.  This is a very reactive means of dealing with risk.  The organization is aware of the potential risk but does not do anything, until the risk happens and will deal with the outcome then.
+
+	Avoiding the risk means that you change the plans to completely avoid potential risk.  This means that you are trying to take risk out of the equation completely.  This is so the organization does not have to deal with these potential risks.  This could be something simple like extending a date on one project, if a more pressing project has the same date requirements.  This ensures that the more pressing project gets finished on time and reduces the risk of both projects being late or over budget.  
+
+	Mitigating the risk limits the impact of the risk.  This way if an issue arises, the problem appears to be less than what it could have been and is an easier fix.  The best ways to mitigate risk would be to have countermeasures to the risks that are identified.  This could be limiting access to databases, or extended training for employees on security protocols or general policies, like general computer usage, or a BYOD policy.  
+
+	Transferring the risk is the last method of dealing with risk.  This involves moving the risk to someone else.  This could be an outside company that you could transfer the risk to, though there may still may be some risk you would have to assume.  There could be some sort of insurance that you could transfer the risk to, that way the financial hardship caused by the risk could be mitigated. 
+
+So how to deal with Risk mitigation.  That seems to be simple, develop a company wide strategy to for risks in the event of a breach.  That means get those that need to be involved trained and included in the 
+strategy.  Also plan on the worst case scenerios.  Steps that should be included proir should be to identify risks, evaluate and identify common causes of risks, communicate plans and implement a strategy.  The last thing should be to train and test.  
+
+	The steps for when a disaster occurrs would be to assess the situation.  This includes seeing first hand the damage and potential impact that the situation is having.  Assessing the situation properly
+is key, if there is a flood and it floods the kitchen that is on the other side of the building from the server room, there might not be a risk to the servers itself.  There would be no reason to worry about the server room and just focus on the kitchen area.  But on the same account, if there was a fire in the building and the fire was next to the server room, adding the server room to the priority list for determining what actions to take.  Then steps to mitigate further damage should be taken if possible.  If there is the need an evacuation off the premesis should happen.  Implement the strategy that was developed.  Alert those in the DRT's and lat them handle the situation from this point.  Once they have been alerted they can now work on determining which services are crucial and which are not, then start to work on bringing those crucial systems back online.  
+	After the event has taken place, and systems are back up and running, then a review of the disaster should take place.  This is where the root cause can be further investigated and implement solutions 
+to mitigate the potential threat further.  The event shoudl be kept on record with actions taken during the disaster and any results and implementations that were taken by the organization.  Learning from this
+is easy, periodically review the findings of disasters and refine the processes to handle the situations that occurred so that you are better prepared for a future disaster.
+	The policies required for a DR would be a Disaster recovery policy, training policy, Evacuation policy, then policies specific to crucial system areas.  The DR plan would go over everything needed in the event of a disaster.  This would include what constitutes a disaster down to the findings and implementation to mitigate further disasters.  This document also gives an overview of each parties responsibilities.  The training policy goes everything each individual needs to know for corporate policies.  This gives a breakdown of when training should be done, and an overview of all of the major policies in the organization.  The evacuation policy should be self explanitory.  This is where to go in the event of an emergency and the routes to get there.  Then it would be anything that is crucial to each department in the company.  Server training, maintenance, recovery policies for IT would be included in the DR as well as any Vendor related information.  Then for the rest of the company it could be customer information, or an employee breakdown with contact information.  
+	Writing the policies should be those most familiar with the processes.  For the IT processes, it should be those that are involved in the DR and has a great understanding of the systems that could be potentially affected.  Corporate policies should be written by HR or C-level management.  All process within a department should be handled by department heads or those with the greatest experience within that department.  As far as who should approve those processes, they should be reviewed for accuracy and once reviewed C-level management should approve each procedure.  
+	The ERT should have at least one person from each department.  They should be well versed in their department duties.  Also they shoudl be equipped to make decisions on the fly and not get too overwhelmed when it comes to adverse situations.  An ERT goes into action if there is a disaster or anything that could potentially lead to an imminent disaster.  Each person's responsibility should be to assess the situation as it stands, advise on a plan, and delegate responsibilities if needed.  
+
+
+
+
+
+
+
+
+
+
+
+
+Justin Neubauer IP4 of IT456
+
+15.5 - Information Technology Disaster Recovery Policy  https://its.weill.cornell.edu/policies/155-information-technology-disaster-recovery-policy

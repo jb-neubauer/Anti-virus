@@ -1,0 +1,169 @@
+Crossover cables connect 2 like devices together (ethernet)
+
+They have to be on the same network to work together
+
+Router is a 'fancy' PC
+
+Routers have at least 2 NIC's
+
+Routers assign the network interface cards to talk with both sides of a network
+that way the network portions match.  This allows devices on the network to 
+communicate with one another.  1 IP network to another IP network
+
+Routers allow for routing traffic from one IP network to another IP network
+
+bootup process for router is like a PC.
+POST ~ Power on Self Test
+Bootstrap ~ Loads set of instructions to call the operating system
+IOS ~ This is the OS of the Router 'Internetworking operating system'
+Configuration ~ Loads the configurations of the router
+
+memory ~ 
+Bootstrap - EEPROM (Electronicaly eraseable programmable Read only Memory)
+IOS - Flash (Same as flash USB)
+Configuration - NVRAM (Non Volitile Random Access Memory(Stores small files to keep 
+The configurations))
+Bootstrap ~ .bin file
+IOS (stored(flash))~ .bin file
+IOS (used(RAM))~ --
+Configuration (Stored(NVRAM)) ~ Startup-config
+Confifuration (used(RAM)) ~ Running-config
+
+Router Configuration ~ 
+Crossover cable from PC to router and a rollover cable to configure the router 
+Crossover cable is from the NIC to the FastEthernet 
+#Rollover cable from the RS-232 port (serial) to the console port
+
+place an IP on workstation then telnet/ssh into the router to configure it
+
+press enter to start
+initial configuration dialog helps to setup router easliy but asks poor questions 
+and does them slowly without doing a complete config
+
+press enter to get to the prompt
+
+Cisco default router name is 'ROUTER' 
+
+There are three modes: User, privileged, and cofiguration modes 
+within the configuration mode there are both global and sub configuration types
+
+> ~ user mode 
+
+enable ~ allows privilege mode (#)
+
+# indicates privilege mode
+
+privilege mode ~ flush configurations, turn processes on and off, turn things on and 
+off, update flash, and move into config mode
+
+Config terminal changes from privilege to config mode ~ Router(config)#
+
+Router(config)# ~ allows you to edit the file running-config
+
+Running-config is stored in Ram
+
+interface fastethernet 0/0 ~ to get to an interface ~ Router(config-if)
+
+exit to get to the previous mode
+
+Three ways to access user mode: Console port on the router, plug a rollover cable into the AUX port, and a virtual connection (VTY port/s) Virtual Terminal lines
+
+to enable so that a password is needed, you must go to ocnfig mode.
+
+To get there type 'enable' then hit enter, then type 'config terminal'
+
+'line' ~ user access mode methods
+
+line console 0 ~ to get to Router(config-line) This allows for things like creating 
+a password
+
+IF you don't know you are configuring line console 0 type in 'line console 0' again
+
+to set a password type 'password' and whatever password you want to use ie.
+password cisco  ~ this makes the password cisco 
+
+to prompt user mode to require a password when they log in using the console port
+type in 'login' ~ This will not prompt for a password because you are in config mode 
+and not in user mode
+
+to get from config mode straight to user mode, type 'end' then 'exit'
+
+if there is a message from the router when trying to get from config to user mode
+the command you are typing will still take
+
+The above password creation ONLY affects the console port
+
+to set a password for the AUX port to type 'enable' to get to privilege mode 
+Then type 'config terminal' to get to config mode 
+type 'aux 0' to config the AUX port
+type 'password' and whatever password ou want to use ie.
+password cisco  ~ this sets the password for the AUX port to 'cisco'
+the last thing is to issue the command 'login' to enable a password prompt at the AUX
+port when trying to connect to it
+
+then you need to configure the VTY
+
+When in config mode ~ ROUTER(config)# type 'line vty 0 4' This will give 5 virtual
+connections
+
+Then set password by typing in 'password' and the password you want to use ie. 
+'password cisco' This sets the password for all VTY's (0-4) as cisco, then hit enter
+after type login to enable a password prompt for logging into a VTY
+
+'show' command is issued from privilege mode
+
+'show running-config' shows the current running config file.  Hit space to get an
+entire page of text, or enter for one line at a time
+
+next is to make it so that usermode to privilege mode requires a PW
+to set that up go to 'Router(config)' To get there type in 'enable' and enter
+then type in 'config-terminal' to get to terminal
+type 'enable secret' and the password you want to use ie.
+'enable secret cisco' to make the privelege password cisco
+
+'show run' to show the config file.  
+
+to change the hostname of the router
+go to the config mode by typing 'enable' from the user mode to get to privilege
+then 'config terminal' to get to config mode
+in config mode type 'hostname' then the name you want to change the router to ie.
+'hostname Justinrouter' to change the default name to 'Justinrouter'
+
+To set a banner type 'banner' then message with a delimeter ie.
+'banner #This router is owned and operated by me#'  The trick for a delimiter is
+to pick any character that you aren't going to use in the banner
+
+to configure the IP for fast ethrenet 0/0 be in config mode by typing:
+'enable' and hit RETURN to enter privilege mode then 'config terminal' or 'config t'
+to get into config mode  'config t' is the shortcut for 'config terminal' when in 
+privilege mode
+
+to configure the IP type in 'interface fastethernet 0/0' then hit return
+this will allow for the addition of the IP address
+to do this type 'ip address' then the address and the mask.  ie. 
+'ip address 10.0.0.1 255.255.255.0' this configures the IP address on the port
+
+to see the fast ethernet port use 'show interface fastethernet 0/0'  This will 
+show the stats of the interface.  this shows 10.0.0.1/24  the 24 represents that
+there are 24 bits in the network portion of the IP address.  
+Also when seeing this there are three states that the ports can be in:
+administratively down: the port is shut down
+down: the port is down with the potential to come up if a cable is plugged into it
+up: the port is in use
+
+To get a port from administratively down to up you need to be in the config state
+then hit 'interface fastethernet 0/0' 
+then 'no shutdown' this will bring it to an up state
+if I want to go from a down state to an administratively down state 'shutdown'
+
+
+'show running-config' shows the interface does not have the "no shutdown" command
+in the status
+
+'show interface fastethernet 0/0' also shows the state that 0/0 is in
+
+To have the configurations run at startup you must be in privilege mode copy the 
+'running-config' file to the 'startup-config' file by running 'copy running-config 
+startup-config'
+
+ 

@@ -1,0 +1,21 @@
+A SDL ismportant to software especially in this day where there are so may attacks that can happen at any time.
+I have seen the organization I currently work for fall under an attack from black hats.  Having a security model
+could have greatly benefitted from preventing attacks
+As far as a component of the model, I feel that training is always the most important phase.  Without training
+there wouldn't be much of a point in implementing a security feature into any piece of software.  Training
+goes over all of the concepts for building more secure software.  This includes things like design, and 
+prepares programmers for threats.  This is also where they can learn or speak about best practices when coding, 
+testing and design.  The 4 concepts I mentioned can be broken down further into subcategories thus providing a 
+good basis for secure coding.  
+Everyone involved with the development of the code should be involved in the training.  This ensures that all
+development parties are aware of the best practices when building the software itself.  
+The reason why this is important is because of best practices.  This also ensure that the proper steps are taken 
+in securing any piece of software.  Without this phase, the rest of the phases can not happen properly.  This 
+could lead to issues further down the line when testing or implementing the software.  Or it could leave unwanted
+loopholes in the software that allow for attacks.
+
+References:
+
+Pre-SDL Requirements: Security Training https://msdn.microsoft.com/en-us/library/windows/desktop/cc307407.aspx
+
+SDL PROCESS: TRAINING  https://www.microsoft.com/en-us/SDL/process/training.aspx

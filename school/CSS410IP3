@@ -1,0 +1,48 @@
+When it comes to cloud computing there are many things that could go wrong.  Most of which deal with the loss of data and
+downtime for a company.  With there being so many things that could go wrong it is hard to imagine what could go right.
+People today are always after information, especially if it is customer information.  To prevent this from happening
+we can take steps to address the gaps in cloud security.  Knowing what the gaps are can help out immensely.
+Data breaches have become more of a norm in todays society.  Companies can incur significant customer loss and 
+damage reputations for years.  The best thing to do is have two-factor authentication occurr to prevent this.
+Two-factor authentication is when a second source of authentication is needed to gain access to a system.  This 
+helps prevent unauthorized access to the systems.  Some of common two-factor authenticators are pins, biometrics,
+and token keys, these are used along with a password.  
+Not having a weak password also helps with protecting data as well as not having poor key and certificates management.
+Many times people (Devs) might leave keys or certs in public repositories like Github or another online repository.
+Having them there leaves your company open to data breaches and loss of customers.
+Then comes the more common things like regular system vulnerabilities.  These come from not patching operating systems.
+The reason why it is so important to patch systems is to plug the holes and backdoors that are present.  
+There are also things like phishing attacks that can happen where users willingly give out their accoutn information to
+those seeking to do harm.  
+Besides those, there are also things like ISP host downtime and CSP downtime.  Either one of these can have huge negative
+impacts on a business.  They are completely out of your control and the only thing you can do is wait for the services to 
+be reestablished and service restored.  On top of all of that you are potentially placing sensitive on a third party server
+that you don't have much control over.  The information could be lost if something goes awry. 
+To prevent a lot of user error, training needs to be done.  Training on subjects like social engineering, phishing, passwords, 
+and other topics pertaining to cloud computing.  Also on the server/cloud side, there needs to be SLA's in place to prevent
+downtime and transfer some of the companies liability to the cloud company.  Things like using ACL's to limit access to the 
+cloud services should be in place as well.  Only those qualified to have access to those systems should be allowed to have
+access.  
+
+Cloud Coputing Policy
+
+Scope:
+This applies to all employees of SKS
+This pertains to only external Cloud Services, user accounts are excluded
+Please contact the IT department if you have any questions
+
+Policy:
+Use of cloud computing services must be approved by the IT Manager who will certify that all IT requirements are
+met and any further requests are addressed with the Cloud Service.
+The use of Cloud Services must comply with SKS's existing policies. 
+Service Level Agreements must be reviewed and approved my the IT manager.
+Employees must comply with the Password policy (SK123) with regards to password complexity and
+visibility.
+Use of services must comply with any regulations regarding the handling of sensitive information such as
+financial records.
+The IT Manager decides what data is appoved for storage in the Cloud.
+Personal cloud services may not be used for storage or manipulation of company related data
+
+
+Resources:
+The dirty dozen: 12 cloud security threats  http://www.infoworld.com/article/3041078/security/the-dirty-dozen-12-cloud-security-threats.html

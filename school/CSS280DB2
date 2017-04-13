@@ -1,0 +1,20 @@
+Describe what social engineering is and how your organization may be susceptible to its effects.
+How can organizations protect themselves from a social engineering attack?
+Give 2 examples of social engineering attacks that you have seen or been subject to.
+
+Social engineering is a way to manipulate others into giving away sensitive information.  Many times social engineers are looking for the individual to divulge their sensitive
+information willingly.  They pretend to be someone of importance within a company or someone that you might trust.  In bigger companies, social engineering can be a real issue.
+A practicioner of social enginnering might pose as someone from the IT department looking to perform maintenance or state that an account was acting strange and from there
+would ask the indiviual their login credentials to access The systems the individual could and use that information to obtain sensitive information.  
+Social engineering has become very dangerous.  They consist of people impersonating those we trust like co-wokers or friends in order to gain the information needed to do
+harm to an individual or a company.  
+So what can we do to protect ourselves?  The main thing to do is Training.  Train employees and others in what to look for in emails or requests.  If an email looks suspicious
+than it probably is.  For those in the IT field like myself.  I have not fallen victim to one of the eventhough I have seen the attempts.  Training is key.  Explaining what to 
+look for in messages and in person can go a long way from preventing harm.  If an individual randomly appears from an "outside" vendor when no one was scheduled, the be wary that 
+this person might try to harm your company.  On top of that, they use questions that they can reference at a later date to perform their attacks.  Other ways would be to make sure 
+your systems are up to date.  Don't allow downloads from unknown sources and make sure you filter out spam.
+We had a phishing training at work where we went over what that is and how it is effective.  Later that day, when a phishing email was sent out to see how well the training took
+many people fell susceptable to this attack and had to be retrained.  But because of this being an internal exercise there wasn't any harm done.  Those that did not learn the first 
+time have retained the information and have not been susceptable since.  
+The second happened today where three employees opened an email and clicked on a link that asked them to input information.  Though no one did input their information, they 
+realized that it was an attack and reached out to the IT department where we investigated the contents further and ran scans on each machine that opened the link.

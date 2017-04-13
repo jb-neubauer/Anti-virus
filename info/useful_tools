@@ -1,0 +1,218 @@
+Useful monitoring tools for sysadmins
+
+*Top*
+
+{hot key list for top (
+t	Displays summary information off and on.
+m	Displays memory information off and on.
+A	Sorts the display by top consumers of various system resources. Useful for quick identification of performance-hungry tasks on a system.
+f	Enters an interactive configuration screen for top. Helpful for setting up top for a specific task.
+o	Enables you to interactively select the ordering within top.
+r	Issues renice command.
+k	Issues kill command.
+z	Turn on or off color/mono
+)
+
+
+
+*vmstat 3*
+
+(outputs process, memory, paging, blockIO, traps, and cpu informaion)
+
+
+*w *
+
+(w username and w vivek)
+(displays information on current users and their activity)
+
+
+*uptime*
+(tells how long a server has been running, how many users are logged on and the load avgs.)
+
+
+*ps -A*
+(shows all current processes)
+(Show Long Format Output
+# ps -Al
+
+To turn on extra full mode (it will show command line arguments passed to process):
+# ps -AlF
+
+To See Threads ( LWP and NLWP)
+# ps -AlFH
+
+To See Threads After Processes
+# ps -AlLm
+
+Print All Process On The Server
+# ps ax
+# ps axu
+
+Print A Process Tree
+# ps -ejH
+# ps axjf
+# pstree
+
+Print Security Information
+# ps -eo euser,ruser,suser,fuser,f,comm,label
+# ps axZ
+# ps -eM
+
+See Every Process Running As User Vivek
+# ps -U vivek -u vivek u
+
+Set Output In a User-Defined Format
+# ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+# ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm
+# ps -eopid,tt,user,fname,tmout,f,wchan
+
+Display Only The Process IDs of Lighttpd
+# ps -C lighttpd -o pid=
+
+OR
+# pgrep lighttpd
+
+OR
+# pgrep -u vivek php-cgi
+
+Display The Name of PID 55977
+# ps -p 55977 -o comm=
+
+Find Out The Top 10 Memory Consuming Process
+# ps -auxf | sort -nr -k 4 | head -10
+
+Find Out top 10 CPU Consuming Process
+# ps -auxf | sort -nr -k 3 | head -10
+)
+
+
+*free*
+(displays the total amount of free and used physical and swap memory in the system, and the buffers used by the kernel)
+
+
+*iostat*
+(CPU stats and input/output stats for devices, partitions and NFS)
+
+
+*sar*
+(collects, report, and save system activity information
+
+To see network counter, enter:
+# sar -n DEV | more
+
+To display the network counters from the 24th:
+# sar -n DEV -f /var/log/sa/sa24 | more
+
+You can also display real time usage using sar:
+# sar 4 5
+)
+
+
+*mpstat*
+(displays acivities for each processor 0 being the first 
+
+mpstat -P ALL 
+displays avg CPU utilization per processor)
+
+*pmap*
+(remports memory map of a process
+
+Use this command to find out causes of memory bottlenecks.
+# pmap -d PID
+
+To display process memory information for pid # 47394, enter:
+# pmap -d 47394
+)
+
+
+*nestat*
+(displays network connection, routing tables, interface stats, masquerade connections, and multicast membership)
+
+*ss*
+(dumps socket stats)
+
+
+*iptraf*
+(interactive IP LAN monitor that shows tcp info udp counts, icmp and ospf info) 
+
+
+*tcpdump*
+(dump traffic on a network
+ to display traffic info about DNS, enter:
+# tcpdump -i eth1 'udp port 53'
+
+To display all IPv4 HTTP packets to and from port 80, i.e. print only packets that contain data, not, for example, SYN and FIN packets and ACK-only packets, enter:
+# tcpdump 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'
+
+To display all FTP session to 202.54.1.5, enter:
+# tcpdump -i eth1 'dst 202.54.1.5 and (port 21 or 20'
+
+To display all HTTP session to 192.168.1.5:
+# tcpdump -ni eth0 'dst 192.168.1.5 and tcp and port http'
+
+Use wireshark to view detailed information about files, enter:
+# tcpdump -n -i eth1 -s 0 -w output.txt src or dst port 80
+)
+
+
+
+*strace*
+(trace system calls and signals, used for debugging webserver and other problems)
+
+
+*/proc*
+(provides detailed info about various hardware devices and other kernel info.)
+
+
+*nagios*
+(host, network equipment, and services monitoring tool)
+
+
+
+*Cacti*
+(network graphing solution designed to harness the powre of  RRDTool's data storage an graphing functionality)
+
+
+*nmap*
+(used to scan network for open ports
+TCP Connect scanning for localhost and network 192.168.0.0/24
+# nmap -v -sT localhost
+# nmap -v -sT 192.168.0.0/24
+
+nmap TCP SYN (half-open) scanning
+# nmap -v -sS localhost
+# nmap -v -sS 192.168.0.0/24
+
+nmap TCP FIN scanning
+# nmap -v -sF localhost
+# nmap -v -sF 192.168.0.0/24
+
+nmap TCP Xmas tree scanning
+Useful to see if firewall protecting against this kind of attack or not:
+# nmap -v -sX localhost
+# nmap -v -sX 192.168.0.0/24
+
+nmap TCP Null scanning
+Useful to see if firewall protecting against this kind attack or not:
+# nmap -v -sN localhost
+# nmap -v -sN 192.168.0.0/24
+
+nmap TCP Windows scanning
+# nmap -v -sW localhost
+# nmap -v -sW 192.168.0.0/24
+
+nmap TCP RPC scanning
+Useful to find out RPC (such as portmap) services
+# nmap -v -sR localhost
+# nmap -v -sR 192.168.0.0/24
+
+nmap UDP scanning
+Useful to find out UDP ports
+# nmap -v -O localhost
+# nmap -v -O 192.168.0.0/24
+
+nmap remote software version scanning
+You can also find out what software version opening the port.
+# nmap -v -sV localhost
+# nmap -v -sV 192.168.0.0/24
+)

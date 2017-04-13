@@ -1,0 +1,91 @@
+Python cheat sheet:
+
+If checks first condition
+elif checks subsequent conditions
+else checks final condition
+
+for variable in list
+Do these things 
+Ex. 
+foods = [‘banana’, ‘oranges’, ‘kiwi’, ‘bread’, ‘juice’]
+for f in foods:
+	print (f, len(f))
+
+ This will print out the foods in the list foods and print the length of each item
+
+For increments in a for loop use three numbers (starting point, ending point, increment)
+
+while While something is true or false do the action.  Until reaching a stopping point.
+Example:
+stuff = 20
+
+while stuff < 25:
+	print(stuff)
+	stuff +=1
+
+This will print 20-24 because the condition of 20- 24 being less than 25
+
+break stops the loop you are currently in
+
+continue continues with the loop if a statement has been fulfilled
+
+Functions
+
+def defines a function
+To call a function use the function name
+Ex.  
+def stuff():
+	print (“stuff is stuff”)
+
+stuff ()  <- is calling the function
+
+Example:
+
+def stuff():
+	print (“stuff is stuff”)
+
+def bitcoin_to_usd(btc):
+	amount = btc * 527
+	print(amount)
+
+stuff()
+bitcoin_to_usd(4.5)
+bitcoin_to_usd(2.5)
+
+return returns a value to a variable that is stored for later use
+Ex.
+def allowed _dating_age(my_age):
+age = my_age /2+7
+return age
+
+My_limit = allowed_dating_age(34)
+Other_limit = allowed_dating_age(31)
+print (“I can date people aged”, My_limit, “or older”)
+print (“You can date people aged”, Other_limit, “or older”)
+
+def gender(sex =’Unknown’):
+	If sex is ‘m’:
+		Sex = ‘Male’
+	elif sex is ‘f’:
+		sex  ‘Female’
+	print sex
+
+gender(‘m’)
+gender(‘f’)
+gender()
+
+Arguments
+
+def dumb_sentence(name=”Justin”, action=”ate”, item=”sushi”)
+	print (name, action, item)
+
+dumb_sentence()
+dumb_sentence(“John”, “sighs”, “loudly”)
+dumb_sentence(item=”foods”)
+dumb_sentence(item=”amazing”, action=”is”)
+
+Output:
+
+Justin ate Sushi
+
+

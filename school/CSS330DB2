@@ -1,0 +1,12 @@
+
+Data control language is part the SQL Language that is used to create privileges for users.  
+The GRANT comand is used to allow users the rights needed to mak echanges or do anything to a database.  This includes viewing databases, creating tables, views and so on.  If someone is given too many privileges the REVOKE command can be used to revoke any privileges that the user might have. Both the GRANT and REVOKE commands can be used to manipulate a users privilege or privileges based on the SQL command written.  For example, GRANT ALL PRIVILEGES ON * . * TO <user>@<localhost>; will grant almost all privileges that a 'root' user has.  The same applies to REVOKE, with the differene being that this removes the privilege granted. 
+The function of roles in Access control is to allow groups to have a set of permissions, making it easier to delegate a set of permissions to people in a company.  for example, if a company had 250 people, it would be almost impossible to maintain everyones individual privileges.  Using RBAC allows for groups of people to have the same privileges based on their function. 
+The public role is a role that is just like another user.  The exception is that when the PUBLIC role is given access to a privilege like DROP TABLE then everyone has the ability to DROP TABLE.  Personally, I feel granting "public" access to any server has the potential to cause a lot of harm to databases.  
+Views are a great way of providing security to a server or database.  They allow for the pulling of certain data on a table without creating a table for the data itself.  They are a 'virtual' table that won't harm the integrity of a databaase itself.  
+
+
+
+References:
+Data Control Language https://www.sqa.org.uk/e-learning/SoftDevRDS04CD/page_94.htm
+

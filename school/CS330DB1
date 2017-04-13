@@ -1,0 +1,20 @@
+The DBMS I am choosing is MySQL.  This is something I have become familiar with not only within the organization I currently work for but in my everyday life.
+The organization I work for relies heavily on MySQL, the main reasons for this is the availability for those to use SQL in the terminal to do so, while others
+can use more of a gui based system for SQL they have that option with tools like MySQL workbench.  
+The main security features of MySQL are the ability to "GRANT" privileges to users based on their needs.  The GRANT feature defines who can access a database
+The connection to the MySQL server can use SSL which uses a PKI system to encrypt data that is being transmitted to and from the MySQL databases.
+MySQL can also implement a two-factor aothentication system that requires users who want to log into the MySWL server to have a CA to access the database.
+The last thing are the extensive logs that are provided.  These logs show who is accessing the database, any queries that were run and when they left the
+database itself.  
+
+The database Schema is the structure that represents a logical view of the entire database.  This defines the how the data is organized and how the relationships
+are formed.  This helps programmers understand the database better.  This is helpful becausse in the organization I currently work for, there are many different 
+databases used and within each databasee hundreds of not thousands or tens of thousands of tables.  Having the Schema allows anyone making database changes to 
+understand fully what the potential effect would have on the rest of the database.  
+
+
+
+Resources:
+
+MySQL Security  http://www.w3resource.com/mysql/mysql-security.php
+MySQL Security: Overview of MySQL security features  https://www.psce.com/blog/2013/02/06/mysql-security-overview-of-mysql-security-features/

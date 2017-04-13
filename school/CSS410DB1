@@ -1,0 +1,39 @@
+Choose a company, ideally one that you are familiar with or work for, and without revealing too much information complete the following:
+
+What are some of the benefits and challenges of cloud computing based on your research?
+Give a brief description of the company and how cloud computing could benefit the company.
+What services, platforms, and protocols should be offered with cloud computing?
+Describe these services and the benefits of using each of these services. 
+In addition, explain any risks, or concerns of risks, for utilizing these services within the cloud.
+
+
+So this week we are going to be talking about cloud computing.  Some of the benefits to cloud computing are that it is easily scalable.  If a company needs more space they can easily
+gain more space without only a limited to no downtime.  Another advantage is that it is flexable.  Employees are able to sync and work on shared documents and apps.  Also, deployment of 
+the data is also easier.  You are only limited in deployment where there isn't an internet connection.  This gives greater means to work from.  Backup is also a major advantage.  The ability
+to not store backups on physical devices is becoming more crucial.  
+
+Cost is both an advantage and a disadvantage. The startup costs are very small compared to having a physical structure.  The costs of a physical structure, however, dwindle after the initial
+investment in the structure.  While with Cloud computing, the initial costs are low, but you are paying for the cloud structure on a monthly basis.  Because of this, cost of Cloud Computing
+is both a pro and con.
+
+Disadvantages would include Internet connectivity.  This means that since all of you applications go through the internet, if the internet goes down so does the business, and you are at the 
+mercy of the ISP until connectivity is regained.  Security is also a disadvantage, trusting a third party with your sensitive data isn't always the best thing.  You are placing your trust
+in another company that may or may not view security as a priority.  Also, You do not have control over the cloud.  So if there are major changes that are needed to be made, you may not have
+access to the systems needed to make the necessary changes.
+
+As far as the company, I work for a small distribution company that has integrated cloud computing into the infrastructure.  We use this as a means for backing up the major systems we use. 
+This has saved a lot of time when it comes to setting up additional physical storage for redundancy.  This will instrumental when SKS (the company I work for) moves locations.  We will only
+have to set up the physical structure and pull the data from the cloud.
+
+The platforms are SaaS (Software as a service), PaaS (Platform as a service), and IaaS (infrastructure as a service)
+Software as a service allows access to applications 
+Platform as a service provides development environments for users to create applications
+Infrastructure as a service provides the infrastructure, this means the servers, storage, network, and OS on demand
+
+
+
+
+References
+Advantages and Disadvantages of Cloud Computing  http://www.levelcloud.net/why-levelcloud/cloud-education-center/advantages-and-disadvantages-of-cloud-computing/
+The Pros and Cons of Cloud Computing  http://www.smallbusinesscomputing.com/biztools/the-pros-and-cons-of-cloud-computing.html
+Understanding the Cloud Computing Stack: SaaS, PaaS, IaaS https://support.rackspace.com/white-paper/understanding-the-cloud-computing-stack-saas-paas-iaas/
