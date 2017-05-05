@@ -1,0 +1,59 @@
+For this assignment, you will conduct Internet research and discuss the causes for why electronic 
+evidence may be found inadmissible in court. Be sure to address the following:
+
+Spoliation
+Tampering
+Fruit of the poisonous tree
+
+
+What constitutes as inadmissible electronic evidence?  Well to answer that we must first 
+understand what that is.  According to Kubor v Dickson: admissibility of electronic evidence There are 4 conditions that electronic evidence can be admissible:
+"The documents were produced while the computer was in regular use
+The information was supplied to hte computer
+The computer was operating properly during the period of use
+and the information supplied was supplied by ordinary means"
+The resource further explains that "they are required to tender a computer-generated 
+statement shall file a certificate:
+identifying the document, describing the production, stating the specs of the device used,
+and have it signed by a responsible party in relation to the above four" (ACAS - LAW)
+Many times courts deem evidence inadmissible due to the 
+improper means by which the evidence was obtained.  The evidence should pertain to the 
+current case and not to another or any more charges that could be possible brought to 
+light.  
+If the plaintiff fails to provide adequate proof as to why the evidence should be used
+in the case then it will be deemed inadmissable.  This is also the case with unverifiable 
+information.  If someone is being examined in court and fails to provide proper 
+verification of an electronic source then the source will also be inadmissable possibly due
+to hearsay.  According to The Reliability, Admissibility, and Power of Electronic Evidence
+they state " For example, where there is no evidence that the emailing party had firsthand knowledge of the matters contained in the email but rather was forwarding someone else’s version, courts are more likely to preclude the entire email from being admitted." (Newman 
+and Ellis, 2011).  
+So what is Tampering as it pertains to Electronic Evidence?  Well that is when someone or
+something has altered a file.  The evidence is altered in such a way that it can not 
+be used in court due to the contents being unreliabale.  To detect this many times an MD5
+fingerprint will be used.  The baseline MD5 hash wil be taken of the file when it is 
+received.  This can hbe very useful to show if there was tampering.  The MD5 hash will 
+change with every new save of the file that changed information.  
+I feel like spoliation is an extreme version of tampering.  The major difference is the 
+signifigance in the alteration of files or even destruction of the file itself.  In 
+response to this courts are turning to sanctions to prevent spoliation.  Spoliation is 
+also willfully withholding of evidence that pertains to the case.  The reasoning behind 
+spoliation is "it may be reasonable to infer that the party had “consciousness of guilt” or other motivation to avoid the evidence." (asginvestigations.com).  Spoliation also does 
+not excuse those that are ignorant of the laws, "Yes, unintentional acts and oversights by good, hard working employees can result in the loss of evidence, which can be interpreted as spoliation by a judge. Use the old adage that ignorance of the law does not excuse you from breaking it." (asginvestigations.com) 
+Fruit of the poisonous tree refers to the unlawful use of evidence that was discovered 
+through the violation of the fourth amendment.  In simple terms you can't prosecute someone
+for something else if the means by which you got the evidence originally was illegal.
+http://criminal.lawyers.com/criminal-law-basics/evidence-and-the-fruit-of-the-poisonous-tree.html has some great examples to help with this point.
+
+
+
+
+
+Resources:
+
+The Reliability, Admissibility, and Power of Electronic Evidence https://apps.americanbar.org/litigation/committees/trialevidence/articles/012511-electronic-evidence.html
+
+Kubor v Dickson: admissibility of electronic evidence http://www.lexology.com/library/detail.aspx?g=f16ede4c-f04a-40a7-96c3-e6a4899f3cf0
+
+Computer Forensics and Spoliation of Evidence https://asginvestigations.com/attorney-services/spoliation-of-evidence/
+
+Evidence and the Fruit of the Poisonous Tree  http://criminal.lawyers.com/criminal-law-basics/evidence-and-the-fruit-of-the-poisonous-tree.html
