@@ -1,0 +1,19 @@
+Coding Playground
+
+With there being so many ways to improve our skills as professionals.  I think that if we narrow
+down on a few of them we might be better in the long run.  I present the Coding Playground.  The idea
+is to assist in the troubleshooting of code, users or otherwise.  Every other week I will present
+a 'broken' script in a common security programming language like python.  I will intentionally give you
+a script that I broke and all of the details needed as to what the script should do and why I want to 
+use the script.  The goal is to have you come up with the fix for the script to get it working and 
+perhaps present additional measures to make the script even better than it was.  
+The broken script might consist of:
+Syntax Errors
+Grammatical Errors
+Scripts that perform other functions than what the intended script was designed to perform
+Other errors 
+or a combination of any of the above
+
+The goal is to get us to be better at recognizing broken code and ultimately make us better 
+troubleshooters.  So join me and have some fun with this.  the best part are these will be available
+for use to all if you choose to use them.

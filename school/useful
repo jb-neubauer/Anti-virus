@@ -13,3 +13,21 @@ SQL
 https://www.reddit.com/r/sysadmin/comments/4q6waa/if_you_had_the_chance_what_would_you_tell_a/d4qtgpu/
 
 https://certification.comptia.org/docs/default-source/downloadablefiles/it-certification-roadmap.pdf?sfvrsn=2
+
+
+
+
+`upgrade git`
+curl -O -L https://github.com/git/git/archive/v2.11.0.tar.gz
+
+tar -zxvf v2.11.0.tar.gz
+
+cd git-v2.10.2
+make clean
+make configure
+./configure --prefix=/usr
+make
+
+make install
+
+This information was taken from "https://blacksaildivision.com/git-latest-version-centos "
