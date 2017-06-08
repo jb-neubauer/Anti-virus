@@ -1,0 +1,75 @@
+The company I have chosen does not really have a desktop application.  They have focused on using 
+custom made web based applications with the desktop applications being more of the COTS variety.  
+That is not to say that there are many differences between the two.  What I am going to do is 
+describe two of the web applications that the company I work for has produced and one that has been
+integrated into a web application.  
+
+The first I will speak on is the main internal website caled connect.  Connect is the main application
+that connects the internal users to the customers.  This is where all of the orders from customers 
+are entered, inventory is tracked, and verious other tasks that are used in relation to the customers.
+Connect has the potential to be a very useful program.  The unfortunate part is that it has become
+very bloated and in my opinion unstable.  By unstable I mean that there are times when a programmer
+makes one small change and it breaks then entire system.  This was a normal occurrance, though it 
+is a little better now, this still happens all too frequently.  Connect is very bloated.  It contains
+well over 2000 pages of data, and it is constantly growing due to the growing number of requests from
+stakeholders.  Many times there are requests for a report to be made to look at productivity in a new
+way, then stakeholder will view it once and that page will never be used again.  There are also some
+pages that load thousands of lines of data instead of truncating it, forcing long load times.  
+Connect is attached to a database that has tens of thousands of tables.  Some of the tables are 
+massive, taking up thousands of lines itself.  
+
+The security risks for the above is there are no security requirements.  Everything is handled at 
+the infrastructure level and there aren't any requirements for programming the applicaiton pages.
+The second risk is that if someone internally wanted to harm connect and had access to do so, they 
+easily could.  The code that is used for connect is not framework based but template based.  And
+within that template the code itself is laden with spaghetti code.  The reason why this is allowed
+is due to a thought form the stakeholders where "this is the way its been done" is the common theme.
+
+For this, I would implement some security training. The training would help programmers develop 
+secure software.  Currently, there isn't any security training pertaining to programming and 
+they have free reign to program how they feel.  
+
+The second application I will speak about would be the customer facing "bottle" site.  Again this
+is a web app that is laden with bad coding techniques where best practices were not employed.  
+When programming this site there weren't any standards followed.  The main focus was to ge the 
+site up and running so customers had an interface to use.  Though this has nothing to do with 
+the software assurance side, the fact that there's an SSL cert helps out in securing the site itslef.
+
+The threat this poses is that there could be XSS or SQL injections from attackers.  With the thought
+of "This is how it's always been" it is hard to either break out of bad habits or create new better
+habits.  So there is always a threat of XSS or injections because of the lack of best practices
+allowed when programming.
+
+For this issue I would say that Security evangelism is needed.  There needs to be someone in the 
+programming realm to promote best practices especially when it comes to security.  This individual
+should also look over the code and verify that standards are being met.  
+
+The third application I would like to touch on is one we have integrated into our systems.
+We used the RingCentral API to create our own in house "caller ID."  This feature calls upon the
+RingCentral API to pull up customer information so it is readily available to the operators.  This
+privides an ease of use in gathering information and helps expedite transactions between customers and
+internal users.  This provides new challenges though.  There needs to be encryption and signatures
+for the API.  Everything needs to be verified by the API.  The process should have been tested for
+security holes and know the best practices ehen implementing API's and preventing attacks.  
+
+Unfortunately, we do not even monitor for any vulnerabilities.  As long as things just work, that is 
+what matters here.  I am not supporting that thought process.  I am just pointing out that this is the
+current culture.  
+
+So what guidelines would I implement?  That is simple.  I would implement training to all staff.
+No not just the programmers, but the stakeholders and anyone who uses our product internally.  I 
+would then implement procedures and guidelines for proper programming techniques while starting the 
+process of cleaning up the current code that is being used.  I would employ someone to monitor for
+vulnerabilities and have the knowledge to know what is best when preventing anything harmful to 
+the business.  The final thing I would do is document everything.  Let those around you know how 
+the software is configured if they need to know.  Show that there were vulnerability tests that were 
+completed.  These thing might not seem like much, but in a culture where "that is how we have always
+done it" this is a lot.  
+
+Resources:
+
+Seven Principles for Software Assurance  https://insights.sei.cmu.edu/sei_blog/2016/10/seven-principles-for-software-assurance.html
+
+Software Assurance: An Overview of Current Industry Best Practices http://www.safecode.org/publication/SAFECode_BestPractices0208.pdf
+
+State of API Security https://www.soapui.org/testing-dojo/world-of-api-testing/state-of-api-security.html

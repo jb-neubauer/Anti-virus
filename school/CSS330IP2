@@ -91,3 +91,12 @@ None/Deny
 Note: the use of ‘All’ this means/implies that as the application expends or contracts the users should be able to view all new objects as well.
 Does it make sense to grant specific objects to user or use the roles?? Describe Your approach for the implementation about the setup, why, how and if you decided to utilize the roles
 Submit All SQL
+
+
+To me it makes more sence to use roles to implement the privileges.  The main reasoning is this, using a role based schema give me better control over user privileges.  
+Using Roles as the scheme allows me to better manage the privileges that are set for groups.  I no longer have to set up privileges per individual, now I can manage 
+all privileges within one group.  In the case of HR_User, HR_Support, and HR_Manager creating an HR group would help out immensly.  I could control the basic structure
+of the privileges and refine it as needed as would be the case for HR_Manager.  This also takes care of those individuals that would enter the company within one of those
+groups.  I could not have to go fishing for the privileges that they may need.  Instead I could just assign them to the proper group and once assigned, the privileges would
+be automatically assigned to that user.  The good part about this is that once the correct privileges are set, I would not have to worry about granting too many or too few
+privileges to that individual.  They would be set based off of the role they were placed in.  

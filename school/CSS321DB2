@@ -1,3 +1,34 @@
-Identify at least 3 security threats to software applications. These threats could be directed at the software source code, the data handled by the software, or other results of the functionality 
-or use of the software application.
-For each of the security threats, identify 1 software assurance technique that could be applied to reduce the security threat, and explain how the use of the technique achieves the desired results.
+
+Three security threats
+
+* The first security threat would be XSS or cross side scripting.  This is where an attacker will 
+try to injecct their own code into the applications.  Some of the risks include taking over an account,
+accessing user information, spreading of viruses, and gaining access to internal systems.  The best
+way to prevent this would be to restrict the characters that can be used in the input fields.  This
+prevents characters like <,>,/, and any other characters used in scripting.  This would prevent all
+scripting that could be done in an input field.  The second thing I would do is to to limit the amount 
+of characters that could be entered into the field.  Limiting the field to anything under the typical
+amount of characters for an XSS would prevent an XSS from occurring.  
+
+* The second security threat would be SQL injection.  SQL injection, like XSS, will try to insert some
+SQL into input fields.  This allows for the attacker to query the database directly.  Common risks
+would be data tampering, locking others out of the systems (through becoming an admin for the server)
+and spoofing.  To prevent this use whitelist input validation.  This validates all user fields defining
+what is Authorized and not allowing everything else.  So if you white list all numbers and letters, 
+then the symbols and special characters woudl not be allowed thus preventing any scripts from being 
+input.
+
+* The third security threat would be Security misconfiguration.  The reason why this is so important,
+just like if your computer is not securely configured, you leave yourself wide open to attacks.  
+The thing with application development is ensuring that if there are multiple layers that they are all
+secured.  Patching would help ensure the mitigation of threats.  This would help plug any holes in 
+current applications and assist in protecting against the latest threats.  
+
+
+Resources:
+
+SQL injection https://www.w3schools.com/sql/sql_injection.asp
+
+Input Validation Cheat Sheet  https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet#Whitelisting_vs_blacklisting
+
+Solving the Top 10 Application Security Threats  http://www.mrc-productivity.com/research/solving-application-security.pdf
