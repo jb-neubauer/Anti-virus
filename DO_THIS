@@ -1,0 +1,1 @@
+PowerShell method (Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol)
