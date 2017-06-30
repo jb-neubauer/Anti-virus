@@ -83,6 +83,9 @@ This file contained:
 `SSLCipherSuite      EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH`
 
 
+restart apache
+
+in the terminal windown (not vim) run command #a2enmod headers
 
 #To preload the HSTS I had to add 
 `Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"`
